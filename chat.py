@@ -56,15 +56,18 @@ output = []
 wfile = 'gogo.txt'
 rfile = 'input.txt'
 
-chat = read_f(rfile)
-output = formating(chat)
-write_f(wfile, output)
+def main():
+	chat = read_f(rfile)
+	output = formating(chat)
+	write_f(wfile, output)
+
+main()
 
 '''
 python3 chat.py
 
 #更新版本用
 git add chat.py
-git commit -m "重構"
+git commit -m "加入 main()"
 git push origin main
 '''
